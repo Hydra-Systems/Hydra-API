@@ -29,7 +29,7 @@ A simple documentation on the hydra api github, a very fun and generic api :)
 // Pegando o wallpaper de GTA e mandando como um arquivo no chat do Discord utilizando um bot
 const superagent = require('superagent');
 
-let { body } = await superagent.get('http://hydrabot.xyz/api/v1/gtavWallpapers);
+let { body } = await superagent.get('http://hydrabot.xyz/api/v1/gtavWallpapers');
 
 message.channel.send({files: [{ attachment: body, name: 'testing.jpg' }]})
 ```
